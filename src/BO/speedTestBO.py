@@ -1,8 +1,9 @@
 from DAO.speedTestDAO import SpeedTestDAO
 
+
 class SpeedTestBO:
     def __init__(self):
-        pass
+        self.speedTestDAO = None
 
     def save(self, speedTestDTO):
         self.speedTestDAO = SpeedTestDAO('speedTest.csv')

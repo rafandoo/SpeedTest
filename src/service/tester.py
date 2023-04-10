@@ -1,4 +1,9 @@
-import speedtest
+from lib import speedtest_cli as speedtest
+
+
+def toMbps(bps):
+    return round(bps / 1000000, 2)
+
 
 class Tester:
     def __init__(self, timeout, threads, secure, pre_allocate):
@@ -13,6 +18,3 @@ class Tester:
         s.download(threads=self.threads)
         s.upload(threads=self.threads)
         return s.results.dict()
-
-    def toMbps(self, bps):
-        return round(bps / 1000000, 2)
