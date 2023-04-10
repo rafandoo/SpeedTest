@@ -171,3 +171,8 @@ cython_debug/
 
 # ignore temp folder
 temp/
+
+# Igonre dist folder for build
+conf/
+img/
+info/
