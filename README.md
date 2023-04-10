@@ -33,6 +33,18 @@ Run the `main.py` file using the command below to run the project.
    python main.py -h
 ```
 
+### Parameters
+
+|     Parameter      |             Description             | Default |
+|:------------------:|:-----------------------------------:|:-------:|
+|     -h, --help     |                Help                 |    -    |
+|   -v, --version    |               Version               |    -    |
+|   -t, --timeout    |       Timeout to run the test       |   10    |
+|    -l, --loops     |   Number of tests to be performed   |    1    |
+|   -th, --threads   |    Number of threads to be used     |    1    |
+|    -s, --secure    |      Use HTTPS instead of HTTP      |  False  |
+| -p, --pre_allocate |         Pre allocate data.          |  False  |
+
 ## Libraries and frameworks 📚
 
 [speedtest-cli](https://github.com/sivel/speedtest-cli)
